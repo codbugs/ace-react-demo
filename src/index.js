@@ -23,7 +23,7 @@ function App () {
       </div>
       <footer className="app--footer">
         <p className="text">Adaptive Cards Playground is a web application made with the aim of learning about the creation and configuration of Adaptive Cards. Also, it would be great if it helps other people to understand, try or test their Adaptive Cards.</p>
-        <p className="text">This project is open source and is available in the following Github repository, <a className="link" href="">ace-react-demo</a>. If you have any suggestion, feel free to create an issue at the following <a className="link" href="">link</a>.</p>
+        <p className="text">This project is open source and is available in the following Github repository, <a className="link" href="https://github.com/codbugs/ace-react-demo">ace-react-demo</a>. If you have any suggestion, feel free to create an issue at the following <a className="link" href="https://github.com/codbugs/ace-react-demo/issues/new">link</a>.</p>
         <p className="text">More information in the following social networks links</p>
         <ul className="social-media--list">
           <li className="social-media--item"><LinkedInIconLink /></li>
