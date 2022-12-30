@@ -1,0 +1,174 @@
+a, body, div, footer, header, h1, li, main, p, span, textarea, ul  {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+
+    box-sizing: border-box;
+
+    color: #000000;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.5;
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    height: 100vh;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 40px;
+
+    height: 100%;
+    padding: 50px;
+}
+
+.app--body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+
+    height: 80%;
+}
+
+.app--footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.app--header {
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.card--list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    
+    list-style: none;
+
+    height: 100%;
+    width: 100%;
+}
+
+.card--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 100%;
+    width: 50%;
+}
+
+.intro {
+    font-size: 1.25rem;
+}
+
+.editor, 
+.preview {
+    background-color: #FBFBFB;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+
+    border: solid 1px #DEDEDE;
+    height: 100%;
+    width: 100%;
+}
+
+.editor--body, 
+.preview--body {
+    height: 100%;
+    width: 100%;
+}
+
+.preview--body {
+    padding: 5px;
+}
+
+
+.editor--header,
+.preview--header {
+    border-bottom: solid 1px #DEDEDE;
+    width: 100%;
+}
+
+.editor--textbox {
+    background-color: #FFFFFF;
+    font-size: 0.875rem;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.editor--title,
+.preview--title {
+    font-weight: 900;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.link {
+    color: #FFB100;
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+.app--footer > .text {
+    font-size: 0.875rem;
+    font-style: italic;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+.social-media--list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    
+    list-style: none;
+    width: 100%;
+}
+
+.icon {
+    height: auto;
+    width: 24px;
+}
