@@ -1,3 +1,5 @@
+.vercel
 .vscode
 
+build/
 node_modules/
