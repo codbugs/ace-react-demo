@@ -1,144 +1,36 @@
 import React from 'react';
+import { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { AdaptiveCard } from 'adaptivecards-react';
+import CardPayloadEditor from './CardPayloadEditor';
+import CardPreview from './CardPreview';
+import GithubIconLink from './GithubIconLink';
+import LinkedInIconLink from './LinkedInIconLink';
 
 
 function App () {
-  var card = {
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "type": "AdaptiveCard",
-    "version": "1.0",
-    "body": [
-      {
-        "type": "TextBlock",
-        "text": "Publish Adaptive Card schema",
-        "weight": "bolder",
-        "size": "medium",
-        "wrap": true,
-        "style": "heading"
-      },
-      {
-        "type": "ColumnSet",
-        "columns": [
-          {
-            "type": "Column",
-            "width": "auto",
-            "items": [
-              {
-                "type": "Image",
-                "url": "https://pbs.twimg.com/profile_images/3647943215/d7f12830b3c17a5a9e4afcc370e3a37e_400x400.jpeg",
-                "altText": "Matt Hidinger",
-                "size": "small",
-                "style": "person"
-              }
-            ]
-          },
-          {
-            "type": "Column",
-            "width": "stretch",
-            "items": [
-              {
-                "type": "TextBlock",
-                "text": "Matt Hidinger",
-                "weight": "bolder",
-                "wrap": true
-              },
-              {
-                "type": "TextBlock",
-                "spacing": "none",
-                "text": "Created {{DATE(2017-02-14T06:08:39Z, SHORT)}}",
-                "isSubtle": true,
-                "wrap": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "TextBlock",
-        "text": "Now that we have defined the main rules and features of the format, we need to produce a schema and publish it to GitHub. The schema will be the starting point of our reference documentation.",
-        "wrap": true
-      },
-      {
-        "type": "FactSet",
-        "facts": [
-          {
-            "title": "Board:",
-            "value": "Adaptive Card"
-          },
-          {
-            "title": "List:",
-            "value": "Backlog"
-          },
-          {
-            "title": "Assigned to:",
-            "value": "Matt Hidinger"
-          },
-          {
-            "title": "Due date:",
-            "value": "Not set"
-          }
-        ]
-      }
-    ],
-    "actions": [
-      {
-        "type": "Action.ShowCard",
-        "title": "Set due date",
-        "card": {
-          "type": "AdaptiveCard",
-          "body": [
-            {
-              "type": "Input.Date",
-              "label": "Enter the due date",
-              "id": "dueDate"
-            }
-          ],
-          "actions": [
-            {
-              "type": "Action.Submit",
-              "title": "OK"
-            }
-          ]
-        }
-      },
-      {
-        "type": "Action.ShowCard",
-        "title": "Comment",
-        "card": {
-          "type": "AdaptiveCard",
-          "body": [
-            {
-              "type": "Input.Text",
-              "id": "comment",
-              "isMultiline": true,
-              "label": "Add a comment"
-            }
-          ],
-          "actions": [
-            {
-              "type": "Action.Submit",
-              "title": "OK"
-            }
-          ]
-        }
-      }
-    ]
-  };
 
+  const [payload, setPayload] = useState(null);
 
-    return <div>
-      <h1>Hello World!!!</h1>
-      <AdaptiveCard payload={ card } hostConfig={
-        { fontFamily: "Segoe UI, Helvetica Neue, sans-serif" }
-      } onExecuteAction={ (action) => {
-        console.log('>>> onExecuteAction');
-        console.log(action);
-      }} onActionOpenUrl={ (action) => {
-        console.log('>>> onActionOpenUrl');
-        console.log(action);
-      } }/>
-    </div>;
+    return <main className="app">
+      <h1 className="app--header">Adaptive Card Playground</h1>
+      <div className="app--body">
+        <p className="intro">Welcome to the application where you can try and test your Adaptive Cards without having to reload the page. The technologies used in the web application are React and, of course, the Adaptive Cards package for React that you can find at the following <a className="link" href="https://www.npmjs.com/package/adaptivecards-react">link</a>.</p>
+        <p className="intro">To start using the application, all you have to do is paste the JSON of your card or start typing it in the corresponding box and you will see the result immediately.</p>
+        <ul className="card--list">
+          <li className="card--item"><CardPayloadEditor onPayloadChange={ payload => setPayload(payload) } /></li>
+          <li className="card--item"><CardPreview payload={ payload } /></li>
+        </ul>
+      </div>
+      <footer className="app--footer">
+        <p className="text">Adaptive Cards Playground is a web application made with the aim of learning about the creation and configuration of Adaptive Cards. Also, it would be great if it helps other people to understand, try or test their Adaptive Cards.</p>
+        <p className="text">This project is open source and is available in the following Github repository, <a className="link" href="">ace-react-demo</a>. If you have any suggestion, feel free to create an issue at the following <a className="link" href="">link</a>.</p>
+        <p className="text">More information in the following social networks links</p>
+        <ul className="social-media--list">
+          <li className="social-media--item"><LinkedInIconLink /></li>
+          <li className="social-media--item"><GithubIconLink /></li>
+        </ul>
+      </footer>
+    </main>;
 }
 
 const root = ReactDOM.render(<App />, document.getElementById('root'));

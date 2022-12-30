@@ -1,0 +1,35 @@
+import CardPayloadPreview from "./CardPayloadPreview";
+
+export default function CardWrongPayloadPreview() {
+
+    const card = {
+      type: "AdaptiveCard",
+      $schema: "http://adaptivecards.io/schemas/adaptive-card.json",
+      fallbackText: "Your device doesn't support this version.",
+      version: "",
+      body: [
+        {
+          type: "Container",
+          items: [
+            {
+              type: "TextBlock",
+              text: "Wrong payload provided",
+              horizontalAlignment: "center",
+              spacing: "medium",
+              weight: "bolder"
+            },
+            {
+              type: "Image",
+              url: "/warning.png",
+              size: "medium",
+              horizontalAlignment: "center",
+              spacing: "medium"
+            }
+          ],
+        },
+      ],
+    };
+  
+    return <CardPayloadPreview card={ card } />;
+  }
+  
