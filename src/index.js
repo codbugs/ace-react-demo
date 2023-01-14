@@ -14,7 +14,7 @@ function App () {
     return <main className="app">
       <h1 className="app--header">Adaptive Card Playground</h1>
       <div className="app--body">
-        <p className="intro">Welcome to the application where you can try and test your Adaptive Cards without having to reload the page. The technologies used in the web application are React and, of course, the Adaptive Cards package for React that you can find at the following <a className="link" href="https://www.npmjs.com/package/adaptivecards-react">link</a>.</p>
+        <p className="intro">Welcome to the application where you can try and test your Adaptive Cards without having to reload the page. The technologies used in the web application are React and, of course, the Adaptive Cards package for React that you can find at the following <a className="link" target="_blank" href="https://www.npmjs.com/package/adaptivecards-react">link</a>.</p>
         <p className="intro">To start using the application, all you have to do is paste the JSON of your card or start typing it in the corresponding box and you will see the result immediately.</p>
         <ul className="card--list">
           <li className="card--item"><CardPayloadEditor onPayloadChange={ payload => setPayload(payload) } /></li>
