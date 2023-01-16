@@ -41,7 +41,6 @@ textarea:focus {
     gap: 40px;
 
     height: 100%;
-    padding: 50px;
 }
 
 .app--body {
@@ -52,20 +51,33 @@ textarea:focus {
     gap: 20px;
 
     height: 80%;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
-.app--footer {
+.app--footer-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+
+    background-color: #FBFBFB;
+    border-top: solid 1px #DEDEDE;
+
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
 }
 
 .app--header {
     font-family: 'Lobster', cursive;
     font-size: 4rem;
     font-weight: 900;
+
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .card--list {
@@ -149,27 +161,49 @@ textarea:focus {
     text-decoration: underline;
 }
 
-.app--footer > .text {
+.icon {
+    height: auto;
+    width: 24px;
+}
+
+.sitemap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+
+    width: 100%;
+}
+
+.sitemap--list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    
+    list-style: none;
+}
+
+.sitemap--list-header {
+    font-weight: 900;
+}
+
+.sitemap--list-item {
+    font-size: 0.875rem;
+}
+
+.sitemap--group {
+    min-width: 15%;
+}
+
+.sitemap--list-item > .text {
     font-size: 0.875rem;
     font-style: italic;
     font-weight: 300;
 
-    text-align: center;
-}
-
-.social-media--list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-    
-    list-style: none;
-    width: 100%;
-}
-
-.icon {
-    height: auto;
-    width: 24px;
+    text-align: left;
 }

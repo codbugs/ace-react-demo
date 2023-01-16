@@ -1,0 +1,25 @@
+[
+    {
+        "items": [
+            { "type": "text", "text": "<b>Adaptive Cards Playground</b> is a web application made with the aim of learning about the creation and configuration of Adaptive Cards. Also, it would be great if it helps other people to understand, try or test their Adaptive Cards." },
+            { "type": "text", "text": "This project is open source and is available in the following Github repository, <a class='link' href='https://github.com/codbugs/ace-react-demo'>ace-react-demo</a>. If you have any suggestion, feel free to create an issue in the following <a class='link' href='https://github.com/codbugs/ace-react-demo/issues/new'>link</a>." }
+        ]
+    },
+    { 
+        "title": "You can find me on",
+        "items": [
+            { "type": "link", "text": "LinkedIn", "url": "https://www.linkedin.com/in/jaimelopezlopez/" },
+            { "type": "link", "text": "Intranet from the trenches", "url": "https://intranetfromthetrenches.substack.com/" },
+            { "type": "link", "text": "Github", "url": "https://github.com/jaloplo" }
+        ]
+    },
+    { 
+        "title": "Official links",
+        "items": [
+            { "type": "link", "text": "Adaptive Cards official page", "url": "https://adaptivecards.io/" },
+            { "type": "link", "text": "Adaptive Cards samples", "url": "https://adaptivecards.io/samples/" },
+            { "type": "link", "text": "Adaptive Cards official designer", "url": "https://adaptivecards.io/designer/" },
+            { "type": "link", "text": "Adaptive Cards Microsoft documentation", "url": "https://learn.microsoft.com/en-us/adaptive-cards/" }
+        ]
+    }
+]

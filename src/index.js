@@ -3,10 +3,9 @@ import { useState } from 'react';
 import ReactDOM from 'react-dom';
 import CardPayloadEditor from './CardPayloadEditor';
 import CardPreview from './CardPreview';
-import GithubIconLink from './GithubIconLink';
-import LinkedInIconLink from './LinkedInIconLink';
 import Link from './components/Link';
 import Text from './components/Text';
+import SiteMap from './SiteMap';
 
 
 function App () {
@@ -24,13 +23,9 @@ function App () {
         </ul>
       </div>
       <footer className="app--footer">
-        <Text>Adaptive Cards Playground is a web application made with the aim of learning about the creation and configuration of Adaptive Cards. Also, it would be great if it helps other people to understand, try or test their Adaptive Cards.</Text>
-        <Text>This project is open source and is available in the following Github repository, <Link url="https://github.com/codbugs/ace-react-demo">ace-react-demo</Link>. If you have any suggestion, feel free to create an issue at the following <Link url="https://github.com/codbugs/ace-react-demo/issues/new">link</Link>.</Text>
-        <Text>More information in the following social networks links</Text>
-        <ul className="social-media--list">
-          <li className="social-media--item"><LinkedInIconLink /></li>
-          <li className="social-media--item"><GithubIconLink /></li>
-        </ul>
+        <div className="app--footer-wrapper">
+          <SiteMap />
+        </div>
       </footer>
     </main>;
 }
