@@ -1,12 +1,20 @@
 
-a, body, div, footer, header, html, h1, li, main, p, span, textarea, ul  {
+:root {
+    --accent: #FFB100;
+    --accent-background: #FFF7e6;
+    --background: #FBFBFB;
+    --border: #DEDEDE;
+    --main: #000000;
+}
+
+a, body, button, div, footer, header, html, h1, li, main, p, span, textarea, ul  {
     background-color: transparent;
     border: 0;
     border-radius: 0;
 
     box-sizing: border-box;
 
-    color: #000000;
+    color: var(--main);
 
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -62,12 +70,12 @@ textarea:focus {
     align-items: center;
     gap: 20px;
 
-    background-color: #FBFBFB;
-    border-top: solid 1px #DEDEDE;
+    background-color: var(--background);
+    border-top: solid 1px var(--border);
 
-    padding-top: 20px;
+    padding-top: 50px;
     padding-right: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     padding-left: 50px;
 }
 
@@ -110,7 +118,7 @@ textarea:focus {
 
 .editor, 
 .preview {
-    background-color: #FBFBFB;
+    background-color: var(--background);
 
     display: flex;
     flex-direction: column;
@@ -118,7 +126,7 @@ textarea:focus {
     align-items: center;
     gap: 0;
 
-    border: solid 1px #DEDEDE;
+    border: solid 1px var(--border);
     height: 100%;
     width: 100%;
 }
@@ -136,7 +144,7 @@ textarea:focus {
 
 .editor--header,
 .preview--header {
-    border-bottom: solid 1px #DEDEDE;
+    border-bottom: solid 1px var(--border);
     width: 100%;
 }
 
@@ -156,7 +164,7 @@ textarea:focus {
 }
 
 .link {
-    color: #FFB100;
+    color: var(--accent);
     font-size: inherit;
     text-decoration: underline;
 }
@@ -198,12 +206,81 @@ textarea:focus {
 
 .sitemap--group {
     min-width: 15%;
+    font-style: italic;
+}
+
+.sitemap--group .link {
+    text-decoration: none;
+}
+
+.sitemap--group .link:hover {
+    font-weight: 900;
+    text-decoration: underline;
 }
 
 .sitemap--list-item > .text {
     font-size: 0.875rem;
-    font-style: italic;
     font-weight: 300;
 
     text-align: left;
+}
+
+.sample {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.sample-header {
+    font-family: 'Lobster', cursive;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.sample--list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+
+    list-style: none;
+}
+
+.sample--item {
+    max-width: 24%;
+}
+
+.sample--card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+    background-color: var(--accent-background);
+    border: solid 1px var(--border);
+    padding: 15px 25px;
+}
+
+.sample--card:hover {
+    border: solid 1px var(--accent);
+}
+
+.sample--card-header {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.sample--card-description {
+    font-size: 0.875rem;
+    font-weight: 100;
+
+    text-align: center;
 }
