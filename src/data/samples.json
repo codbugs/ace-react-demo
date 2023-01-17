@@ -3,32 +3,134 @@
         "title": "IT tickets",
         "description": "Lorem ipsum dolor sit amet, proident aute sit amet ipsum labore aliquip deserunt enim anim amet tempor Lorem adipisicing dolore",
         "payload": {
-            "type": "AdaptiveCard",
-            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-            "fallbackText": "Your device doesn't support this version.",
-            "version": "",
-            "body": [
+          "type": "AdaptiveCard",
+          "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+          "version": "1.3",
+          "body": [
               {
-                "type": "Container",
-                "items": [
-                  {
-                    "type": "TextBlock",
-                    "text": "No IT tickets provided",
-                    "horizontalAlignment": "center",
-                    "spacing": "medium",
-                    "weight": "bolder"
-                  },
-                  {
-                    "type": "Image",
-                    "url": "/info.png",
-                    "size": "medium",
-                    "horizontalAlignment": "center",
-                    "spacing": "medium"
-                  }
-                ]
+                  "type": "Container",
+                  "items": [
+                      {
+                          "type": "TextBlock",
+                          "text": "Tickets summary",
+                          "wrap": true,
+                          "size": "Large",
+                          "weight": "Bolder"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "This is the list with the last status of the open tickets in the system.",
+                          "wrap": true
+                      }
+                  ],
+                  "minHeight": "100px"
+              },
+              {
+                  "type": "Container",
+                  "minHeight": "100px",
+                  "items": [
+                      {
+                          "type": "ColumnSet",
+                          "columns": [
+                              {
+                                  "type": "Column",
+                                  "width": "stretch",
+                                  "items": [
+                                      {
+                                          "type": "Image",
+                                          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Microsoft_Office_SharePoint_%282019%E2%80%93present%29.svg/2097px-Microsoft_Office_SharePoint_%282019%E2%80%93present%29.svg.png",
+                                          "height": "64px",
+                                          "horizontalAlignment": "Center"
+                                      }
+                                  ],
+                                  "backgroundImage": {
+                                      "verticalAlignment": "Center",
+                                      "horizontalAlignment": "Center"
+                                  }
+                              },
+                              {
+                                  "type": "Column",
+                                  "width": "stretch",
+                                  "items": [
+                                      {
+                                          "type": "FactSet",
+                                          "facts": [
+                                              {
+                                                  "title": "Critical",
+                                                  "value": "0"
+                                              },
+                                              {
+                                                  "title": "High",
+                                                  "value": "4"
+                                              },
+                                              {
+                                                  "title": "Medium",
+                                                  "value": "10"
+                                              },
+                                              {
+                                                  "title": "Low",
+                                                  "value": "3"
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "type": "Container",
+                  "minHeight": "100px",
+                  "items": [
+                      {
+                          "type": "ColumnSet",
+                          "columns": [
+                              {
+                                  "type": "Column",
+                                  "width": "stretch",
+                                  "items": [
+                                      {
+                                          "type": "Image",
+                                          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg/2203px-Microsoft_Office_Teams_%282018%E2%80%93present%29.svg.png",
+                                          "height": "64px",
+                                          "horizontalAlignment": "Center"
+                                      }
+                                  ]
+                              },
+                              {
+                                  "type": "Column",
+                                  "width": "stretch",
+                                  "items": [
+                                      {
+                                          "type": "FactSet",
+                                          "facts": [
+                                              {
+                                                  "title": "Critical",
+                                                  "value": "2"
+                                              },
+                                              {
+                                                  "title": "High",
+                                                  "value": "5"
+                                              },
+                                              {
+                                                  "title": "Medium",
+                                                  "value": "3"
+                                              },
+                                              {
+                                                  "title": "Low",
+                                                  "value": "0"
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
               }
-            ]
-          }
+          ]
+      }
     },
     {
         "title": "System status",
