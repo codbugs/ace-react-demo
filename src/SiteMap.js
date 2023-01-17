@@ -19,7 +19,7 @@ export default function SiteMap() {
                                 }
 
                                 if(item.type === 'text') {
-                                    return (<li key={ index} className="sitemap--list-item">
+                                    return (<li key={ item_index } className="sitemap--list-item">
                                         <SafeText text={ item.text } />
                                     </li>);
                                 }
