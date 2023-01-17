@@ -242,18 +242,11 @@ textarea:focus {
 }
 
 .sample--list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
-
+    
     list-style: none;
-}
-
-.sample--item {
-    max-width: 24%;
 }
 
 .sample--card {
