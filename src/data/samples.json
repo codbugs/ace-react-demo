@@ -133,68 +133,6 @@
       }
     },
     {
-        "title": "System status",
-        "description": "Lorem ipsum dolor sit amet, sint occaecat excepteur consequat Lorem velit veniam esse",
-        "payload": {
-          "type": "AdaptiveCard",
-          "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-          "fallbackText": "Your device doesn't support this version.",
-          "version": "",
-          "body": [
-            {
-              "type": "Container",
-              "items": [
-                {
-                  "type": "TextBlock",
-                  "text": "No System status provided",
-                  "horizontalAlignment": "center",
-                  "spacing": "medium",
-                  "weight": "bolder"
-                },
-                {
-                  "type": "Image",
-                  "url": "/info.png",
-                  "size": "medium",
-                  "horizontalAlignment": "center",
-                  "spacing": "medium"
-                }
-              ]
-            }
-          ]
-        }
-    },
-    {
-        "title": "Environment information",
-        "description": "Lorem ipsum dolor sit amet, ipsum anim et irure est nostrud qui sunt velit non voluptate exercitation cillum aute",
-        "payload": {
-          "type": "AdaptiveCard",
-          "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-          "fallbackText": "Your device doesn't support this version.",
-          "version": "",
-          "body": [
-            {
-              "type": "Container",
-              "items": [
-                {
-                  "type": "TextBlock",
-                  "text": "No Environment information provided",
-                  "horizontalAlignment": "center",
-                  "spacing": "medium",
-                  "weight": "bolder"
-                },
-                {
-                  "type": "Image",
-                  "url": "/info.png",
-                  "size": "medium",
-                  "horizontalAlignment": "center",
-                  "spacing": "medium"
-                }
-              ]
-            }
-          ]
-        }
-    },
-    {
         "title": "Niko Niko",
         "description": "Lorem ipsum dolor sit amet, eiusmod nisi eu labore duis cupidatat elit nulla quis fugiat id sunt exercitation aute est esse occaecat officia nostrud mollit",
         "payload": {
