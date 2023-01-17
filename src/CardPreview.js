@@ -7,10 +7,6 @@ import CardWrongPayloadPreview from './CardWrongPayloadPreview';
 
 
 export default function CardPreview({ payload }) {
-    
-    const hostConfig = { 
-        fontFamily: "Segoe UI, Helvetica Neue, sans-serif" 
-    };
 
     let component = <Fragment />;
 
