@@ -145,14 +145,13 @@
                   "items": [
                       {
                           "type": "TextBlock",
-                          "text": "¿Cómo te encuentras hoy?",
-                          "wrap": true,
+                          "text": "How are you feeling today?",
                           "weight": "Bolder",
                           "size": "Large"
                       },
                       {
                           "type": "TextBlock",
-                          "text": "Dinos cómo te sientes para saber cómo te sientes a lo largo del tiempo.",
+                          "text": "Tell us how you feel to find out how you feel over time.",
                           "wrap": true
                       },
                       {
@@ -171,7 +170,7 @@
                                           "actions": [
                                               {
                                                   "type": "Action.Submit",
-                                                  "title": "Genial",
+                                                  "title": "Great",
                                                   "style": "positive"
                                               }
                                           ]
@@ -211,7 +210,7 @@
                                           "actions": [
                                               {
                                                   "type": "Action.Submit",
-                                                  "title": "Fatal",
+                                                  "title": "Bad",
                                                   "style": "positive"
                                               }
                                           ]
@@ -226,7 +225,7 @@
           "actions": [
               {
                   "type": "Action.Submit",
-                  "title": "Accede al historial"
+                  "title": "Access to your history"
               }
           ]
       }
